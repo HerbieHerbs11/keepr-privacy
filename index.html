@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Keepr</title>
+    <style>
+      :root {
+        --keepr-purple: #7c3aed;
+        --keepr-purple-dark: #5b21b6;
+        --keepr-purple-light: #a78bfa;
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+      }
 
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--text);
+        background: linear-gradient(
+          165deg,
+          var(--bg) 0%,
+          #1a1033 45%,
+          var(--bg) 100%
+        );
+        min-height: 100vh;
+      }
+
+      .wrap {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 0.875rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      header img {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        flex-shrink: 0;
+      }
+
+      .brand-name {
+        font-size: 1.375rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--keepr-purple-light);
+      }
+
+      h1 {
+        font-size: clamp(1.75rem, 4vw, 2rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        margin: 0 0 0.5rem;
+        color: var(--text);
+      }
+
+      .effective {
+        font-size: 0.9375rem;
+        color: var(--muted);
+        margin: 0 0 2rem;
+      }
+
+      main h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--keepr-purple-light);
+        margin: 2rem 0 0.75rem;
+      }
+
+      main p,
+      main li {
+        color: #cbd5e1;
+      }
+
+      main ul {
+        margin: 0.5rem 0 1rem;
+        padding-left: 1.25rem;
+      }
+
+      main li {
+        margin-bottom: 0.35rem;
+      }
+
+      a {
+        color: var(--keepr-purple-light);
+      }
+
+      a:hover {
+        color: #c4b5fd;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.25rem 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <img src="keepr-icon.png" width="48" height="48" alt="Keepr logo" />
+        <span class="brand-name">Keepr</span>
+      </header>
+
+      <h1>Privacy Policy</h1>
+      <p class="effective"><strong>Effective date:</strong> October 19, 2026</p>
+
+      <main>
+        <p>
+          This Privacy Policy describes how the <strong>Keepr</strong> Chrome
+          extension (“Keepr,” “we,” “us”) handles information when you use the
+          extension. Keepr is a local-first tool for creating notes, saving
+          text and images from websites, and organizing them with boards and
+          tags.
+        </p>
+
+        <h2>What Keepr does</h2>
+        <p>
+          Keepr runs entirely in your browser as a Chrome extension. It provides
+          a dashboard where you can browse, search, and organize saved content,
+          and context-menu actions to save selected text or images from web
+          pages you visit. Keepr does not require an account to use.
+        </p>
+
+        <h2>Information Keepr accesses</h2>
+        <p>
+          Keepr only accesses information when you take an action in the
+          extension, such as saving content or using the dashboard:
+        </p>
+        <ul>
+          <li>
+            <strong>Selected text</strong> — When you choose “Save to Keepr” on
+            highlighted text, Keepr reads the selection so it can be stored in
+            your library. To preserve line breaks, Keepr may run a short,
+            one-time script in the active tab to read the selection as plain
+            text. That script only reads your current selection; it does not
+            collect unrelated page content.
+          </li>
+          <li>
+            <strong>Images</strong> — When you choose “Save to Keepr” on an
+            image, Keepr uses the image URL provided by the browser and
+            downloads the image data so it can be stored locally.
+          </li>
+          <li>
+            <strong>Page context</strong> — When you save text or an image,
+            Keepr stores the page URL and page title associated with that save
+            (when available) so you can see where the item came from.
+          </li>
+          <li>
+            <strong>Content you create</strong> — Notes, board names, tag names,
+            favorites, and organization you set in the dashboard are stored
+            locally.
+          </li>
+        </ul>
+
+        <h2>How data is stored</h2>
+        <p>
+          All library data is stored <strong>on your device only</strong>, in
+          your browser, using <strong>IndexedDB</strong> (via the extension’s
+          local database). This includes saved text, notes, image files, boards,
+          tags, favorite status, and related metadata such as timestamps and
+          source URLs.
+        </p>
+        <p>
+          Keepr does not operate servers that receive or store your library. We
+          do not sync your data to the cloud as part of the extension.
+        </p>
+
+        <h2>Network activity</h2>
+        <p>
+          Keepr does not send your library, notes, or saved text to us or to
+          third-party analytics or advertising services. The extension does not
+          include analytics, telemetry, or cloud synchronization features in its
+          current implementation.
+        </p>
+        <p>
+          The only routine network request in Keepr occurs when
+          <strong>you explicitly save an image</strong>: the extension downloads
+          the image from the URL you chose (for example, a CDN or image host) so
+          the image can be stored in your local library. That download is
+          initiated by your action; Keepr does not browse or scan websites in
+          the background.
+        </p>
+
+        <h2>Accounts</h2>
+        <p>
+          Keepr does not offer user accounts, sign-in, or registration. There is
+          no Keepr-hosted profile tied to your identity.
+        </p>
+
+        <h2>Export and deletion</h2>
+        <ul>
+          <li>
+            <strong>Export</strong> — In Settings, you can export your entire
+            library as a JSON backup file to your computer.
+          </li>
+          <li>
+            <strong>Delete items</strong> — You can delete individual saved
+            items, boards, and tags from the dashboard.
+          </li>
+          <li>
+            <strong>Replace library</strong> — Importing a backup replaces your
+            current local library after you confirm.
+          </li>
+          <li>
+            <strong>Remove all data</strong> — Uninstalling the extension or
+            clearing the extension’s site data in Chrome removes locally stored
+            Keepr data from your browser. Keepr does not retain a copy on our
+            servers because we do not receive your library data.
+          </li>
+        </ul>
+
+        <div class="card">
+          <h2 style="margin-top: 0">Chrome extension permissions</h2>
+          <p style="margin-bottom: 0.75rem">
+            Keepr requests the following permissions for the features described
+            above:
+          </p>
+          <ul style="margin-bottom: 0">
+            <li>
+              <strong>Context menus</strong> — To show “Save to Keepr” when you
+              right-click selected text or an image.
+            </li>
+            <li>
+              <strong>Scripting</strong> — To read your text selection with
+              better formatting when you save text (only after you use the save
+              action).
+            </li>
+            <li>
+              <strong>Alarms</strong> — To briefly show a confirmation on the
+              extension icon after a successful save, then clear it
+              automatically.
+            </li>
+            <li>
+              <strong>Host permission (&lt;all_urls&gt;)</strong> — To download
+              image files from the URL you save, including images hosted on
+              domains different from the page you are viewing. Keepr does not use
+              this permission to collect data without your action.
+            </li>
+          </ul>
+        </div>
+
+        <h2>Children’s privacy</h2>
+        <p>
+          Keepr is not directed at children under 13, and we do not knowingly
+          collect personal information from children. Because data stays on your
+          device and is not transmitted to us, we do not receive identifiable
+          information from users of any age.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When we do, we
+          will revise the effective date at the top of this page. Continued use
+          of Keepr after changes means you accept the updated policy. For
+          material changes, we may also update the extension listing or in-app
+          information where appropriate.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy or Keepr’s privacy
+          practices, contact:
+        </p>
+        <p>
+          <a href="mailto:herbieherbs11@gmail.com">herbieherbs11@gmail.com</a>
+        </p>
+      </main>
+
+      <footer>
+        <p>Keep what you find. — Keepr Chrome extension</p>
+      </footer>
+    </div>
+  </body>
+</html>
